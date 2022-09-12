@@ -24,8 +24,8 @@ import csv
 response = requests.get('https://jsonplaceholder.typicode.com/users')
 users = json.loads(response.text)
 
-print(type(users))
-print(users)
+# print(type(users))
+# print(users)
 
 with open('users.csv', 'w') as f:
     writer = csv.writer(f)
