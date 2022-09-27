@@ -23,7 +23,7 @@ class Device:
         self.tn.write(command.encode() + b'\n')
         time.sleep(timeout)
 
-    def send_form_list(self, commands):
+    def send_from_list(self, commands):
         for cmd in commands:
             self.send(cmd)
 
@@ -41,7 +41,7 @@ commands = ['enable', 'cisco', 'conf t', 'int loopback 0', 'ip address 1.1.1.1 2
             'router ospf 1', 'net 0.0.0.0 0.0.0.0 area 0', 'end', 'term len 0', 'show ip protocols', 'exit']
 
 
-router.send_form_list(commands)
+router.send_from_list(commands)
 output = router.show()
 print(output)
 
