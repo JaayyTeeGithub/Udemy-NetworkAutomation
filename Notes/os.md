@@ -1,3 +1,4 @@
-The os module provides a portable way of using operating system dependent functionality.
+The os module 
 -
-https://docs.python.org/3/library/os.html
+Provides a portable way of using operating system dependent functionality.
+Documentation: https://docs.python.org/3/library/os.html
